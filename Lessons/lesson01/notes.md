@@ -74,9 +74,13 @@ Each compartment with its own: length, diameter, membrane voltage, ion channels,
 - Sections let investigators represent neuronal anatomy without having to wrestle with the cable equation. 
 
 ## Numerical Integration Methods
-- default: **Implicit Euler**: robust stability and first order accuracy in time (sufficient for most applications).
+- Default: **Implicit Euler**: robust stability and first order accuracy in time (sufficient for most applications).
 - **Crank-Nicolson method**: secondorder accuracy, more computational cost. Prone to numerical osciallations if dt is too long, voltage clamps are present or system states are described by algebraic equations. 
 - Use of adaptive integration methods:actual method is either IDA (Hindmarsh and Taylor, 1999) or CVODES (Hindmarsh and Serban, 2002)
+
+## Spatial and Temporal Discretization
+- Each section own discretization parameter **nseg**; governsnumber of interal points at which the discretized form of the cable equation is integrated and can be changed after the anatomical and biophysical properties of the model.
+- Spatially non-uniform parameters and variables are described in terms of normalized distance from one end of the section
 
 
 ## Workflow we will use
