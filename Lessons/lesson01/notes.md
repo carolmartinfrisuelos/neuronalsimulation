@@ -82,6 +82,22 @@ Each compartment with its own: length, diameter, membrane voltage, ion channels,
 - Each section own discretization parameter **nseg**; governsnumber of interal points at which the discretized form of the cable equation is integrated and can be changed after the anatomical and biophysical properties of the model.
 - Spatially non-uniform parameters and variables are described in terms of normalized distance from one end of the section
 
+## Graphical User Interface
+Powerful to combine hoc programming and the GUI. Model tools:
+- Channel Builder: makes it easy to specify voltage- and ligand-gated ion channels in terms of ODEs (HH-style, including Borg-Graham formulation) and/or kinetic schemes
+- CellBuilder
+- Import3D tool
+- Linear Circuit Builder
+- Network Builder
+
+Model analysis and optimization:
+- ModelView tool
+- Impedance tools
+- Multiple Run Fitter 
+
+## User-extendable library of biophysical mechanisms
+Model descriptions in NMODL: simple syntax to express kinetic schemes and algebraic/differential equations
+Add volatge- and ligand-gates ion channels, diffusion, buffering, active transport...
 
 ## Workflow we will use
 
@@ -140,5 +156,8 @@ Around the 2020s
 
 ## The Hodgkin-Huxley model
 
-## Why is NEURON widely used in neuroscience search
+## References:
 
+- [NEURON Documentation – What is NEURON?](https://www.neuronsimulator.org/en/latest/guide/what_is_neuron.html)
+- [Official NEURON Documentation](https://www.neuronsimulator.org/en/latest/)
+- [Python Documentation](https://docs.python.org/3/)
