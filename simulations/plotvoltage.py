@@ -47,7 +47,7 @@ for sec in [soma, axon, dend]:
 stim = h.IClamp(soma(0.5))
 stim.delay = 10
 stim.dur = 50
-stim.amp = 0.1
+stim.amp = 0.05
 
 # Recording
 v = h.Vector()
@@ -65,26 +65,50 @@ h.run()
 time = t.to_python()
 voltage = v.to_python()
 
-print("Number of voltage points:", len(voltage))
-print("Number of time points:", len(time))
+# Find maximum and minimum voltage
+max_voltage = max(voltage)
+min_voltage = min(voltage)
 
-print("First 10 voltage values:")
-print(voltage[:10])
+# Find when they occur
+max_index = voltage.index(max_voltage)
+min_index = voltage.index(min_voltage)
 
-print("First 10 time values:")
-print(time[:10])
+max_time = time[max_index]
+min_time = time[min_index]
 
-# Plot
-plt.figure(figsize=(8, 4))
+print(f"Maximum voltage: {max_voltage:.3f} mV at {max_time:.3f} ms")
+print(f"Minimum voltage: {min_voltage:.3f} mV at {min_time:.3f} ms")
 
-plt.plot(time, voltage)
+# Create figure
+plt.figure(figsize=(8,4))
 
+# Plot voltage trace
+plt.plot(time, voltage, label="Membrane Voltage")
+
+# Mark maximum voltage
+plt.scatter(max_time, max_voltage)
+plt.text(
+    max_time,
+    max_voltage,
+    f" Max = {max_voltage:.2f} mV",
+    fontsize=9
+)
+
+# Mark minimum voltage
+plt.scatter(min_time, min_voltage)
+plt.text(
+    min_time,
+    min_voltage,
+    f" Min = {min_voltage:.2f} mV",
+    fontsize=9
+)
+
+# Labels
 plt.xlabel("Time (ms)")
 plt.ylabel("Membrane Voltage (mV)")
 plt.title("Passive Neuron Response")
 
 plt.grid(True)
+plt.legend()
 
 plt.show()
-
-print("Neuron created successfully!")
