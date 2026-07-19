@@ -45,7 +45,17 @@ Alan Hodgkin and Andrew Huxley discovered how neurons generate electrical signal
 
 Main equation that describes how the membrane voltage changes over time:
 
-$C_m\frac{dV}{dt}=I-\bar{g}_{Na}m^{3}h(V-E_{Na})-\bar{g}_{K}n^{4}(V-E_{K})-g_L(V-E_L)$
+$$
+C_m\frac{dV}{dt}
+=
+I
+-
+\bar{g}_{Na}m^{3}h(V-E_{Na})
+-
+\bar{g}_{K}n^{4}(V-E_{K})
+-
+g_{L}(V-E_{L})
+$$
 
 | Symbol    | Meaning              | Units  |
 | --------- | -------------------- | ------ |
@@ -75,6 +85,6 @@ $C_m\frac{dV}{dt}=I-\bar{g}_{Na}m^{3}h(V-E_{Na})-\bar{g}_{K}n^{4}(V-E_{K})-g_L(V
 | (E_K)      | Potassium equilibrium potential |
 
 **LEAK CURRENT**
-- Passove ion leakage
+- Passive ion leakage
 
 **CONDUCTANCE**
