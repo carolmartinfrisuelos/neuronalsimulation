@@ -50,11 +50,11 @@ C_m\frac{dV}{dt}
 =
 I
 -
-\bar{g}_{Na}m^{3}h(V-E_{Na})
+\bar{g}_{Na}m^3h(V-E_{Na})
 -
-\bar{g}_{K}n^{4}(V-E_{K})
+\bar{g}_{K}n^4(V-E_{K})
 -
-g_{L}(V-E_{L})
+g_L(V-E_L) 
 $$
 
 | Symbol    | Meaning              | Units  |
