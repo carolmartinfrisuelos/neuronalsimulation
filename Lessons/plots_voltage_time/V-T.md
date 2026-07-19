@@ -99,3 +99,5 @@ Since you're using only passive channels (pas), the neuron should not produce an
 **stim = h.IClamp(axon(0.5))**
 - Maximum voltage: -64.929 mV at 40.075 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
+
+## PLOT OF SOMA, AXON AND DENDRITE V-T
