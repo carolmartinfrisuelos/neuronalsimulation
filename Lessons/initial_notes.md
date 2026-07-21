@@ -159,7 +159,7 @@ Around the 2020s
 **Mebrane Potential Equation**
 - The core equation is derived from Kirchhoff's current law, stating that the total current injected into a neuron I is the sum of the capacitive current and the individual ionic currents
 
-![Membrane Potential Eq](membrane potential equation.png)
+![Membrane Potential Eq](membrane_equation.png)
 
 
 ## References:
