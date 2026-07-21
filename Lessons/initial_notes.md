@@ -156,6 +156,12 @@ Around the 2020s
 
 ## The Hodgkin-Huxley model
 
+**Mebrane Potential Equation**
+- The core equation is derived from Kirchhoff's current law, stating that the total current injected into a neuron I is the sum of the capacitive current and the individual ionic currents
+
+![Membrane Potential Eq](membrane potential equation.png)
+
+
 ## References:
 
 - [NEURON Documentation – What is NEURON?](https://www.neuronsimulator.org/en/latest/guide/what_is_neuron.html)
