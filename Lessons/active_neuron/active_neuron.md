@@ -144,3 +144,39 @@ $$
 $$
 
 # ACTION POTENTIAL
+
+External current
+       │
+       ▼
+Membrane voltage V changes
+       │
+       ├─────────────┐
+       │             │
+       ▼             ▼
+    m changes      h changes
+       │             │
+       └──────┬──────┘
+              │
+              ▼
+        Sodium current
+              │
+              ▼
+        Voltage changes
+              
+              ↑
+              │
+       n also changes
+              │
+              ▼
+       Potassium current
+              │
+              ▼
+        Voltage changes
+
+- **1.RESTING STATE:** neuron is resting near membrane potential $V≈−65 mV$
+- **2.BEGINNING DEPOLARIZATION:** external current is injected, and membrane voltage starts increasing $I_ext>0$
+- **3.SODIUM ACTIVATION:** as voltage increases **m** increases, and sodium channels open. $I_Na$ becomes large, sodium enters the neuron, increasing even further the voltage, creating positive feedback.
+- **4.ACTION POTENTIAL PEAK:**the membrane voltage becomes strongly depolarized and **m** is very high. However, sodium channels begin to incativate and **h** increases. At the same time potassium channels start opening; **n** increases.
+- **5.REPOLARIZATION:**potassium channels start increasingly opening, potassium exits the cell and creates am outward potassium current; the same time membrane voltage decreases.
+- **6.HYPERPOLARIZATION:**potassium channels may remain open for a short period and sometimes the membrane voltage can become more negative that its resting potential, which is called afterhyperpolarization.
+- **7.RETURN TO REST:** The gating variables return to restig potential, after neuron will be able to generate another action potential.
