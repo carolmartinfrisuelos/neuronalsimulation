@@ -39,44 +39,8 @@ sec.insert("pas")
 # for: 
 sec.insert("hh")
 ```
-## Action Potential in terms of equations:
 
-Current injected
-↓
-
-Membrane depolarizes
-↓
-
-m increases rapidly
-↓
-
-Sodium channels open
-↓
-
-INa becomes large and inward
-↓
-
-Membrane depolarizes even more
-↓
-
-Positive feedback
-↓
-
-Action potential
-↓
-
-h decreases (sodium channels inactivate)
-↓
-
-n increases (potassium channels open)
-↓
-
-Potassium current repolarizes the membrane
-↓
-
-Neuron returns to rest
-
-# Hodkgkin-Huxley (hh)
+# HODKGKIN-HUXLEY (HH)
 Alan Hodgkin and Andrew Huxley discovered how neurons generate electrical signals in the squid giant axon in the 1950s.
 
 The Hodgkin-Huxley (HH) mathematical modeldescribes how the electrical voltage across a neuron changes over time. It describes the generation and propagation of action potentials.
@@ -144,7 +108,7 @@ $$
 - $\bar{g}_L$ is the **leak conductance**. The classical HH value is 0.0003 S/cm2.
 - $E_L$ is the **leak reversal potential**, which classical HH value is -54.3mV.
 
-## **Gating variable differential equation**
+## **Gating Variabls Differential Equation**
 The gating variables $(n, m, h)$, which represent the probability that specific ion channels are open, follow first-order differential equations of the form:
 
 $$
