@@ -39,52 +39,76 @@ sec.insert("pas")
 # for: 
 sec.insert("hh")
 ```
+## Action Potential in terms of equations:
+
+Current injected
+        │
+        ▼
+Membrane depolarizes
+        │
+        ▼
+m increases rapidly
+        │
+        ▼
+Sodium channels open
+        │
+        ▼
+INa becomes large and inward
+        │
+        ▼
+Membrane depolarizes even more
+        │
+        ▼
+Positive feedback
+        │
+        ▼
+Action potential
+        │
+        ▼
+h decreases (sodium channels inactivate)
+        │
+        ▼
+n increases (potassium channels open)
+        │
+        ▼
+Potassium current repolarizes the membrane
+        │
+        ▼
+Neuron returns to rest
 
 ## Hodkgkin-Huxley (hh)
 Alan Hodgkin and Andrew Huxley discovered how neurons generate electrical signals in the squid giant axon in the 1950s.
 
-Main equation that describes how the membrane voltage changes over time:
+The Hodgkin-Huxley (HH) mathematical modeldescribes how the electrical voltage across a neuron changes over time. It describes the generation and propagation of action potentials.
+
+The membrane current is described by: 
 
 $$
-C_m\frac{dV}{dt}
-=
-I
--
-\bar{g}_{Na}m^3h(V-E_{Na})
--
-\bar{g}_{K}n^4(V-E_{K})
--
-g_L(V-E_L) 
+I = C_m \frac{dV}{dt} + I_{Na} + I_K + I_L
 $$
 
-| Symbol    | Meaning              | Units  |
-| --------- | -------------------- | ------ |
-| (C_m)     | Membrane capacitance | µF/cm² |
-| (V)       | Membrane voltage     | mV     |
-| (t)       | Time                 | ms     |
-| (I_{ext}) | Injected current     | µA/cm² |
-| (I_{Na})  | Sodium current       | µA/cm² |
-| (I_K)     | Potassium current    | µA/cm² |
-| (I_L)     | Leak current         | µA/cm² |
+- $C_m$ is the membrane capacitance.
+- $\frac{dV}{dt}$ is the rate of change of the membrane potential.
 
-**SODIUM CURRENT**
-| Parameter     | Meaning                    | Units         |
-| ------------- | -------------------------- | ------------- |
-| (I_{Na})      | Sodium current             | µA/cm²        |
-| (\bar g_{Na}) | Maximum sodium conductance | S/cm²         |
-| (m)           | Sodium activation gate     | dimensionless |
-| (h)           | Sodium inactivation gate   | dimensionless |
-| (V)           | Membrane voltage           | mV            |
-| (E_{Na})      | Sodium reversal potential  | mV            |
+The ionic currents are defined using conductance-based equations based on the difference between the membrane potential $V$ and the ion's equilibrium potential, together with dimensionless gating variables $(m, h, n)$:
 
-**POTASSIUM CURRENT**
-| Parameter  | Meaning                         |
-| ---------- | ------------------------------- |
-| (n)        | Potassium activation gate       |
-| (\bar g_K) | Maximum potassium conductance   |
-| (E_K)      | Potassium equilibrium potential |
+- **Potasium Current**
+$$
+I_K = \bar{g}_K n^4 (V - E_K)
+$$
+- **Sodium Current**
+$$
+I_{Na} = \bar{g}_{Na} m^3 h (V - E_{Na})
+$$
+- **Leak Current**
+$$
+I_L = \bar{g}_L (V - E_L)
+$$
 
-**LEAK CURRENT**
-- Passive ion leakage
+The gating variables $(n, m, h)$, which represent the probability that specific ion channels are open, follow first-order differential equations of the form:
 
-**CONDUCTANCE**
+- **Gating variable differential equation**
+$$
+\frac{dx}{dt} = \alpha_x(V)(1-x) - \beta_x(V)x
+$$
+
