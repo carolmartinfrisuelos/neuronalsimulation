@@ -92,15 +92,20 @@ $$
 
 The ionic currents are defined using conductance-based equations based on the difference between the membrane potential $V$ and the ion's equilibrium potential, together with dimensionless gating variables $(m, h, n)$:
 
-- **Potasium Current**
+- **Potasium Current:**
+
 $$
 I_K = \bar{g}_K n^4 (V - E_K)
 $$
-- **Sodium Current**
+
+- **Sodium Current:**
+
 $$
 I_{Na} = \bar{g}_{Na} m^3 h (V - E_{Na})
 $$
-- **Leak Current**
+
+- **Leak Current:**
+
 $$
 I_L = \bar{g}_L (V - E_L)
 $$
@@ -108,6 +113,7 @@ $$
 The gating variables $(n, m, h)$, which represent the probability that specific ion channels are open, follow first-order differential equations of the form:
 
 - **Gating variable differential equation**
+
 $$
 \frac{dx}{dt} = \alpha_x(V)(1-x) - \beta_x(V)x
 $$
