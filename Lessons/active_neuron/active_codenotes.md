@@ -1,28 +1,28 @@
 
 # Active Neuron Code Notes
 
-´´´python
+```python
 sec.insert("hh") #hh means Hodgkin-Huxley mechanism
-´´´ 
+``` 
 
 ## Most common used parameters
 
-´´´python
+```python
 gnabar_hh #Maximum Sodium Conductance: 0.12 S/cm²
 gkbar_hh #Maximum potassium conductance: 0.036 S/cm²
 gl_hh #Leak conductance: 0.0003 S/cm²
 el_hh #Leak reversal potential: -54.3 mV
-´´´
+```
 
 They can be modified inside this for loop:
 
-´´´python
+```python
 for seg in soma:
     seg.hh.gnabar = 0.12
     seg.hh.gkbar = 0.036
     seg.hh.gl = 0.0003
     seg.hh.el = -54.3
-´´´
+```
 
 ## Variables you can record 
 | Variable     | Meaning                       | Units         |
@@ -37,10 +37,10 @@ for seg in soma:
 
 An example of recording will be:
 
-´´´python
+```python
 m = h.Vector()
 m.record(soma(0.5)._ref_m_hh)
-´´´
+```
 
 # MOST IMPORTANT PARAMETERS
 
@@ -53,6 +53,6 @@ m.record(soma(0.5)._ref_m_hh)
 | $E_L$ | Leak reversal potential | $-54.3 \ mV$ | `seg.hh.el` |
 | $E_{Na}$ | Na⁺ reversal potential | approximately $+50 \ mV$ | Mechanism-dependent |
 | $E_K$ | K⁺ reversal potential | approximately $-77 \ mV$ | Mechanism-dependent |
-| $m$ | Na⁺ activation | $0$–$1$ | `m_hh` |
-| $h$ | Na⁺ inactivation | $0$–$1$ | `h_hh` |
-| $n$ | K⁺ activation | $0$–$1$ | `n_hh` |
+| $m$ | Na⁺ activation | $0$– $1$ | `m_hh` |
+| $h$ | Na⁺ inactivation | $0$– $1$ | `h_hh` |
+| $n$ | K⁺ activation | $0$– $1$ | `n_hh` |
