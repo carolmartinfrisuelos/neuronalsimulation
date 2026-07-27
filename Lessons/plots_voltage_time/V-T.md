@@ -22,54 +22,78 @@ Since you're using only passive channels (pas), the neuron should not produce an
 - Maximum voltage: -63.321 mV at 40.700 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![0.05nA](V-T_0.05nA.png)
+
 **0.1nA**
 - Maximum voltage: -61.641 mV at 41.225 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
+
+![0.1nA](V-T_0.1nA.png)
 
 **0.2nA**
 - Maximum voltage: -58.283 mV at 41.950 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![0.2nA](V-T_0.2nA.png)
+
 **0.5nA**
 - Maximum voltage: -48.207 mV at 43.125 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![0.5nA](V-T_0.5nA.png)
+
 ## CHANGE MEMBRANE CAPACITANCE (sec.cm)
 
-**1 µF/cm^^2**
+**1 µF/cm^2**
 - Maximum voltage: -63.321 mV at 40.700 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
-**2 µF/cm^^2**
+![1 µF/cm^2](V-T_1cm.png)
+
+**2 µF/cm^2**
 - Maximum voltage: -63.321 mV at 60.000 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
+
+![2 µF/cm^2](V-T_2cm.png)
 
 **10 µF/cm^^2**
 - Maximum voltage: -63.328 mV at 60.000 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![10 µF/cm^2](V-T_10cm.png)
+
 **30 µF/cm^^2**
 - Maximum voltage: -63.546 mV at 60.000 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
+
+![30 µF/cm^2](V-T_30cm.png)
 
 **0.01 µF/cm^^2**
 - Maximum voltage: -63.321 mV at 10.675 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![0.01 µF/cm^2](V-T_0.01cm.png)
+
 ## CHANGE THE LEAK CONDUCTANCE (seg.pas.g)
 - A higher leak conductance makes the membrane "leakier." The voltage is pulled back toward the resting potential more quickly.
 
-**0.001 S/cm^^2**
+**0.001 S/cm^2**
 - Maximum voltage: -63.321 mV at 40.700 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
+
+![0.001 S/cm^2](V-T_0.001Scm2.png)
 
 **0.0001 S/cm^^2**
 - Maximum voltage: -54.065 mV at 60.000 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![0.0001 S/cm^2](V-T_0.0001Scm2.png)
+
 **0.01 S/cm^^2**
 - Maximum voltage: -64.731 mV at 13.225 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
+
+![0.01 S/cm^2](V-T_0.01Scm2.png)
 
 
 ## CHANGE THE RESTING POTENTIAL (seg.pas.e)
@@ -80,13 +104,20 @@ Since you're using only passive channels (pas), the neuron should not produce an
 - Maximum voltage: -63.321 mV at 40.700 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![-65mV](V-T_-65mV.png)
+
 **-70mV**
 - Maximum voltage: -65.000 mV at 0.000 ms
+
 - Minimum voltage: -70.000 mV at 88.925 ms
+
+![-70mV](V-T_-70mV.png)
 
 **-55mV**
 - Maximum voltage: -53.321 mV at 40.775 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
+
+![-55mV](V-T_-55mV.png)
 
 ## INJECT CURRENT TO DIFFERENT LOCATIONS (stim = h.IClamp(soma(0.5)))
 
@@ -96,8 +127,14 @@ Since you're using only passive channels (pas), the neuron should not produce an
 - Maximum voltage: -63.987 mV at 40.850 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![h.IClamp(dend(0.5))](V-T_IClampdend0.5.png)
+
 **stim = h.IClamp(axon(0.5))**
 - Maximum voltage: -64.929 mV at 40.075 ms
 - Minimum voltage: -65.000 mV at 0.000 ms
 
+![h.IClamp(axon(0.5))](V-T_IClampaxon0.5.png)
+
 ## PLOT OF SOMA, AXON AND DENDRITE V-T
+
+![soma axon dend](V-Tsomaaxonden.png)
