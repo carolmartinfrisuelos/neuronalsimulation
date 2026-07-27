@@ -14,3 +14,13 @@
 | **8** | Synapses | Connect neurons together |
 | **9** | Networks | Small neural circuits |
 | **10** | Morphology Files | Import real reconstructed neurons |
+
+- **cable theory**: how singnals travel through dendrites
+
+- **synapses**: learn: ExpSyn, NetStim, NetCon
+
+- **networks**: connect neurons with neurons and synapse, create a samll circuit 
+
+- **morphology**: import a real morphology file: .swc, .asc, investigate a reconstructed neuron
+
+- **.mod mechanisms**: start writing own mechanisms
