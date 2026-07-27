@@ -64,6 +64,7 @@ Two more experiments were carried out in which we separated the geometry and the
 Increasing sodium conductance in the Hodgkin-Huxley model means increasing $\bar{g}_{Na}$, which also means increasing the amount of sodium current that can flow. 
 
 - **SODIUM CURRENT**
+
 $$
 I_{Na} = \bar{g}_{Na} m^3 h (V - E_{Na})
 $$
@@ -76,27 +77,19 @@ $$
 
 - One particularly interesting example for a computational project is:
 
-SCN8A→Nav1.6
-	​
-
-
-Nav1.6 is a voltage-gated sodium channel strongly involved in neuronal excitability, including at the axon initial segment and nodes of Ranvier.
+**SCN8A→Nav1.6**: Nav1.6 is a voltage-gated sodium channel strongly involved in neuronal excitability, including at the axon initial segment and nodes of Ranvier.
 
 Some gain-of-function SCN8A mutations can increase sodium-channel activity.
 
 For example, mutations can cause:
 
-channels to activate too easily,
-channels to inactivate too slowly,
-increased persistent sodium current,
-increased repetitive firing.
+- channels to activate too easily
+- channels to inactivate too slowly
+- increased persistent sodium current
+- increased repetitive firing
 
 These changes can lead to neuronal hyperexcitability and epileptic encephalopathy
 
-- 🧠 Epilepsy / sodium-channel dysfunction
-
-This is the most direct connection to your current experiment.
-
-Your hypothesis could be:
+- **Epilepsy / sodium-channel dysfunction**
 
 "Increasing sodium-channel conductance can increase neuronal excitability and promote repetitive firing, providing a simplified computational model of how altered voltage-gated sodium-channel function may contribute to epileptic hyperexcitability."
