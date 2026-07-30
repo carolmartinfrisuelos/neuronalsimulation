@@ -55,9 +55,9 @@
 
 ![1nA](01_1nA.png)
 
-**Current 1nA**
+**Current 10nA**
 
-![1nA](01_1nA.png)
+![10nA](01_10nA.png)
 
 ## Analysis
 
