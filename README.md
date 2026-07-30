@@ -1,5 +1,7 @@
 # neuronalsimulation
 
+It is a project in which AI is used to learn how to simulate using NEURON, HOC and python. Furthermore, learning how to code and plot biomedical simulations using AI. Meanwhile, also learning the meaning behind the results of the simulations and getting familiarize with git and git hub.
+
 ## Learning Roadmap
 
 | Lesson | Topic | Goal |
