@@ -78,7 +78,7 @@ def run_simulation(current):
 # RUN ONE SIMULATION
 # =====================================================
 
-time_data, voltage_data = run_simulation(10)
+time_data, voltage_data = run_simulation(0.252)
 
 
 # =====================================================
