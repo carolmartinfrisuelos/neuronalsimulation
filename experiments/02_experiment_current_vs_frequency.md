@@ -67,13 +67,13 @@ This plot indicated at what times each Action Potential is fired. Each row repre
 - As the current increases, the spikes become closer together (higher firing frequency).
 
 Moreover, we can see how the first spike starts shortly after 100ms, this is because our initial condition was:
-```python stim.delay = 100 ```
+``` stim.delay = 100 ```
 
 To conclude, this plot restates the fact that stronger currents push the membrane above the threshold faster than weaker currents. This way, the neuron spends less time recovering and the interval between spikes decreases: **Inter-Spike Interval (ISI)**.
 
 ![RasterPlot1](02_RasterPlot1.png)
 
-Selecting 8 represntative currents we can obtain the following Raster Plot:
+Selecting 8 representative currents we can obtain the following Raster Plot:
 
 ![RasterPlot2](02_RasterPlot2.png)
 
