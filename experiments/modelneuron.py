@@ -69,10 +69,12 @@ h.tstop = 1000
 # Function 1: Run a Simulation
 # Runs the neuron with any current and any duration
 
-def run_simulation(current,duration, v_init=-65):
+def run_simulation(current,duration, section, v_init=-65):
 
+    stim = h.IClamp(section(0.5))
     stim.amp = current
     stim.dur = duration
+    stim.delay = 100
 
     h.finitialize(v_init)
     h.run()
