@@ -77,7 +77,7 @@ $$
 
 - One particularly interesting example for a computational project is:
 
-**SCN8A→Nav1.6**: Nav1.6 is a voltage-gated sodium channel strongly involved in neuronal excitability, including at the axon initial segment and nodes of Ranvier.
+**SCN8A→Nav1.6:** Nav1.6 is a voltage-gated sodium channel strongly involved in neuronal excitability, including at the axon initial segment and nodes of Ranvier.
 
 Some gain-of-function SCN8A mutations can increase sodium-channel activity.
 

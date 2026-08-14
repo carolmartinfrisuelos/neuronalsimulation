@@ -183,3 +183,7 @@ Membrane voltage V changes
 - **5. REPOLARIZATION:** potassium channels start increasingly opening, potassium exits the cell and creates am outward potassium current; the same time membrane voltage decreases.
 - **6. HYPERPOLARIZATION:** potassium channels may remain open for a short period and sometimes the membrane voltage can become more negative that its resting potential, which is called afterhyperpolarization.
 - **7. RETURN TO REST:** The gating variables return to restig potential, after neuron will be able to generate another action potential.
+
+# NEURONAL DYNAMICS
+
+Look into [Neuronal Dynamics – Hodgkin-Huxley Model](https://neuronaldynamics.epfl.ch/online/Ch2.S2.html)

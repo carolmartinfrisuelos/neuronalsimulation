@@ -98,21 +98,7 @@ At that moment, potassium channels remain open even after the sodium current has
 
 Potassium leaves the neuron, carrying positive charge out of the cell.
 
-Because potassium channels close slowly, the membrane temporarily becomes more negative than the resting potential.
-
-This is why the voltage trace looks like
-
-           Spike
-             /\
-            /  \
------------/    \---------
-                  \
-                   \
-                    \____
-                        \
-                         \____ Resting potential
-
-The small dip below the resting potential is completely normal and is one of the defining characteristics of a Hodgkin–Huxley action potential.
+Because potassium channels close slowly, the membrane temporarily becomes more negative than the resting potential. A small dip below the resting potential is completely normal and is one of the defining characteristics of a Hodgkin–Huxley action potential.
 
 **Why do larger currents produce almost the same peak voltage?**
 

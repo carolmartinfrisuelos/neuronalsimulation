@@ -25,7 +25,7 @@ soma.cm = 1 #classical value of 1 uF/cm^2
 # Set the axial resistance
 soma.Ra = 100 # resistance of current to flow inside the cell
 
-soma.gnabar_hh = 0.19
+
 # Create a current clamp
 stim = h.IClamp(soma(0.5))
 

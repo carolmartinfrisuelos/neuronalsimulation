@@ -130,3 +130,29 @@ def spike_times(time, voltage):
 
     return spikes
 
+# Function 5: Run Ion Simulation
+# Same as the first one but change somas Na and K conductance
+
+def run_ion_simulation(current, duration, gNa, gK):
+
+    soma.gnabar_hh = gNa
+    soma.gkbar_hh = gK
+
+    stim = h.IClamp(soma(0.5))
+
+    stim.delay = 100
+    stim.dur = duration
+    stim.amp = current
+
+    time = h.Vector()
+    voltage = h.Vector()
+
+    time.record(h._ref_t)
+    voltage.record(soma(0.5)._ref_v)
+
+    h.tstop = 1000
+
+    h.finitialize(-65)
+    h.run()
+
+    return list(time), list(voltage)

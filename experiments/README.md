@@ -19,6 +19,19 @@ I injected vs N(AP)
 
 This introduces you to rheobase/current threshold concepts.
 
+---------------------------------------------
+- Small current → little charge enters → small depolarization.
+- Larger current → more charge enters → larger depolarization.
+- If the membrane reaches threshold (around -55 mV), sodium channels begin to open rapidly.
+O
+nce enough sodium channels open, the Hodgkin–Huxley positive feedback produces an action potential.
+
+So the current itself does not directly create the spike.
+
+Instead, it moves the membrane closer to threshold.
+
+Once threshold is crossed, the sodium channels take over.
+
 # Experiment 2: Current Amplitude vs firing frequency 
 
 Instead of only asking whether an AP happens, ask:

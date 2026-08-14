@@ -48,8 +48,8 @@ for sec in [soma,axon,dend]:
 
 stim = h.IClamp(soma(0.5)) #stim has no special meaning , it is the name of the varible injected
 stim.delay = 10
-stim.dur = 0
-stim.amp = 0
+stim.dur = 1
+stim.amp = 0.1
 #delay, dur and amp belong to the IClamp object
 
 
