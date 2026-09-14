@@ -151,8 +151,3 @@ plt.xlim(80, 130)
 plt.grid()
 plt.legend()
 plt.show()
-
-           
-
-
-
