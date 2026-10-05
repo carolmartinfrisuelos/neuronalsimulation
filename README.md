@@ -2,32 +2,32 @@
 
 ## About this repository
 
-This repository is a personal learning and portfolio project focused on **computational neuroscience, neuronal modelling, and simulation with Python and NEURON**.
+This repository is a personal learning and portfolio project focused on **computational neuroscience, neuronal modelling, and simulation using Python and NEURON**.
 
-The project started from the fundamentals of neuronal electrophysiology and progressively moves toward more realistic computational models. The goal is not only to learn how to run simulations, but to understand the **biology, mathematics, physics, and programming** behind neuronal behaviour.
+The project started from the fundamentals of neuronal electrophysiology and progressively moves toward more realistic computational models.
 
-The current stage of the project focuses on working with **real reconstructed neuronal morphologies** and understanding how neuronal structure can be incorporated into computational models.
+The main goal is not only to learn how to run simulations, but to understand the **biology, mathematics, physics, and programming** behind neuronal behaviour.
+
+The project currently progresses from simplified neuronal models toward working with **real reconstructed neuronal morphologies**.
 
 ---
 
-## Main goal
+# Main goal
 
-The long-term goal is to understand how the **structure and biophysical properties of neurons determine their electrical behaviour**, and how these processes can be represented computationally.
+The long-term goal of this project is to understand how the **structure and biophysical properties of neurons influence their electrical behaviour**, and how these processes can be represented computationally.
 
 The learning progression is:
 
 ```text
 Biological principles
         ↓
-Membrane potential
+Passive membrane
         ↓
-Passive neurons
+Active membrane
         ↓
-Active neurons
+Experiments with neuronal models
         ↓
 Hodgkin-Huxley model
-        ↓
-Current injection experiments
         ↓
 Cable theory
         ↓
@@ -39,7 +39,7 @@ Multiple neurons
         ↓
 Small neural networks
         ↓
-Real reconstructed neuronal morphology
+Real neuronal morphology
         ↓
 Realistic multi-compartment neurons
         ↓
@@ -58,24 +58,15 @@ neuronalsimulation/
 ├── lessons/
 │   │
 │   ├── 1.plots_voltage_time/
-│   │   └── experiments/
-│   │
 │   ├── 2.active_neuron/
-│   │   └── experiments/
-│   │
-│   ├── 3.hh_recap/
-│   │
-│   ├── 4.cable_theory/
-│   │
-│   ├── 5.spatial_recording/
-│   │
-│   ├── 6.synapses/
-│   │
-│   ├── 7.two_neurons/
-│   │
-│   ├── 8.network/
-│   │
-│   └── 9.morphology/
+│   ├── 3.experiments/
+│   ├── 4.hh_recap/
+│   ├── 5.cable_theory/
+│   ├── 6.spatial_recording/
+│   ├── 7.synapses/
+│   ├── 8.two_neurons/
+│   ├── 9.network/
+│   └── 10.morphology/
 │
 ├── .github/
 │
@@ -84,9 +75,9 @@ neuronalsimulation/
 └── README.md
 ```
 
-The lessons are numbered according to the approximate order in which I learned the concepts.
+The lessons are numbered according to the progression of the project.
 
-Experiments are kept inside the lesson where they belong rather than in a separate top-level folder. This makes it easier to understand the relationship between each experiment and the concepts it investigates.
+The repository begins with basic neuronal electrophysiology, moves through active neuronal models and experiments, and gradually introduces spatial effects, synaptic communication, networks, and finally reconstructed neuronal morphology.
 
 ---
 
@@ -112,27 +103,21 @@ Topics explored include:
 
 At this stage, the neuron does not generate a full action potential. The focus is on understanding the basic electrical behaviour of the membrane.
 
-### Experiments
-
-Small experiments are stored inside this lesson because they directly investigate the concepts introduced here.
+The main idea was to establish the relationship between:
 
 ```text
-1.plots_voltage_time/
-│
-├── lesson code
-│
-└── experiments/
-    ├── ...
-    └── ...
+Injected current
+      ↓
+Membrane response
+      ↓
+Voltage over time
 ```
-
-These experiments were used to change parameters and observe how the neuronal response changes.
 
 ---
 
 # 2. Active neuron — Hodgkin-Huxley model
 
-The second major stage introduced an **active neuronal membrane**.
+The second stage introduced an **active neuronal membrane**.
 
 Instead of representing the membrane only with passive leak behaviour, the model includes voltage-dependent ion channels.
 
@@ -153,27 +138,48 @@ Topics explored include:
 
 This stage connected the biological description of ion channels with the mathematical equations used to model neuronal activity.
 
-### Experiments
-
-Experiments are stored inside this lesson because they investigate the active neuron and Hodgkin-Huxley model directly.
+The main conceptual progression was:
 
 ```text
-2.active_neuron/
-│
-├── lesson code
-│
-└── experiments/
-    ├── ...
-    └── ...
+Membrane voltage
+      ↓
+Voltage-dependent ion channels
+      ↓
+Na+ and K+ currents
+      ↓
+Action potential
 ```
-
-The experiments explore how changing model parameters affects neuronal behaviour.
-
-The purpose is to understand the model rather than simply reproduce a predefined result.
 
 ---
 
-# 3. Hodgkin-Huxley recap
+# 3. Experiments
+
+After learning the basic passive and active neuronal models, this stage focuses on **experimentation and parameter exploration**.
+
+The experiments are used to investigate how changing different parameters affects neuronal behaviour.
+
+Rather than simply running a predefined simulation, the goal is to ask questions such as:
+
+* What happens if the injected current changes?
+* How does the membrane respond to different current amplitudes?
+* How does changing membrane parameters affect the response?
+* How do changes in Hodgkin-Huxley parameters influence action potentials?
+* How does the neuronal response change when different parameters are modified?
+* What can be learned by comparing different simulations?
+
+This stage is important because it moves from:
+
+> **"I know how to run the model."**
+
+toward:
+
+> **"I can use the model to investigate neuronal behaviour."**
+
+The experiments therefore act as a bridge between learning the theoretical models and using them as computational tools.
+
+---
+
+# 4. Hodgkin-Huxley recap
 
 This stage consolidates the main concepts behind the Hodgkin-Huxley model.
 
@@ -193,11 +199,11 @@ Membrane potential changes
 Action potential
 ```
 
-This lesson provides a bridge between the initial active-neuron experiments and the more spatially realistic models that follow.
+This lesson provides a more structured review of the Hodgkin-Huxley model and reinforces the mathematical and biological concepts introduced previously.
 
 ---
 
-# 4. Cable theory
+# 5. Cable theory
 
 Neurons are not electrically isolated points.
 
@@ -211,15 +217,27 @@ Cable theory was introduced to understand:
 * The effect of neuronal geometry
 * The relationship between membrane and axial resistance
 
-An important concept introduced here is:
+One of the most important concepts introduced here is:
 
 > **Neuronal geometry affects electrical signalling.**
 
 This becomes especially important later when working with real neuronal morphologies.
 
+The conceptual progression is:
+
+```text
+Electrical signal
+      ↓
+Propagation through neuronal processes
+      ↓
+Attenuation with distance
+      ↓
+Effect of geometry
+```
+
 ---
 
-# 5. Spatial recording
+# 6. Spatial recording
 
 This stage focuses on recording voltage at different locations within a neuron.
 
@@ -236,13 +254,14 @@ This allows investigation of:
 * Spatial voltage changes
 * Dendritic attenuation
 * Differences between recording locations
-* How signals propagate through neuronal structures
+* Signal propagation through neuronal structures
+* The relationship between distance and membrane potential
 
-This connects cable theory with the later use of reconstructed neuronal morphology.
+This stage connects cable theory with the later use of reconstructed neuronal morphology.
 
 ---
 
-# 6. Synapses
+# 7. Synapses
 
 This stage introduces communication between neurons.
 
@@ -268,11 +287,18 @@ Postsynaptic voltage response
 
 The goal is to understand how synaptic events can be represented computationally and how they change the membrane potential of a neuron.
 
-Parameters such as synaptic weight, delay, timing, and reversal potential can be modified to investigate their effects.
+Parameters such as:
+
+* Synaptic weight
+* Delay
+* Event timing
+* Reversal potential
+
+can be modified to investigate their effects.
 
 ---
 
-# 7. Two neurons
+# 8. Two neurons
 
 The next stage connects two neurons computationally.
 
@@ -290,7 +316,7 @@ Neuron B
 
 This introduces the idea that individual neuron models can become components of a larger circuit.
 
-The focus is on:
+The focus is on understanding:
 
 * Presynaptic voltage
 * Event detection
@@ -298,9 +324,11 @@ The focus is on:
 * Postsynaptic responses
 * Connections between neuronal models
 
+This is the first step from modelling an isolated neuron toward modelling **interacting neurons**.
+
 ---
 
-# 8. Networks
+# 9. Networks
 
 The network stage extends the previous idea to several neurons.
 
@@ -325,15 +353,15 @@ Topics include:
 * Event propagation
 * Small neural circuits
 
-This moves from modelling an individual neuron toward modelling **interacting neuronal systems**.
+This moves from modelling individual neurons toward modelling **interacting neuronal systems**.
 
 ---
 
-# 9. Morphology
+# 10. Morphology
 
 The current stage of the project focuses on **real reconstructed neuronal morphology**.
 
-Instead of creating an artificial neuron such as:
+Instead of creating an artificial neuron with a simple geometry such as:
 
 ```text
 Soma
@@ -343,7 +371,7 @@ Dendrite
 
 the goal is to work with experimentally reconstructed neurons.
 
-The first morphology file being explored is an **SWC reconstruction**.
+The current morphology work uses an **SWC reconstruction**.
 
 An SWC file contains information such as:
 
@@ -357,12 +385,15 @@ RADIUS
 PARENT
 ```
 
-This describes the geometry and topology of the reconstructed neuron.
+These values describe the geometry and topology of the reconstructed neuron.
 
-### Current objectives
+## Current objectives
 
+The current stage is focused on learning how to:
+
+* Find and download real neuronal morphology files
 * Understand the SWC format
-* Read an SWC file with Python
+* Read an SWC file using Python
 * Understand the `PARENT` relationship
 * Reconstruct the neuronal tree
 * Visualize morphology in 2D
@@ -372,29 +403,9 @@ This describes the geometry and topology of the reconstructed neuron.
 * Understand the difference between SWC points and NEURON sections
 * Import reconstructed morphology into NEURON using `Import3D`
 
-The longer-term goal is to connect the morphology with electrical modelling.
+The current work therefore goes beyond simply looking at a neuron.
 
-Conceptually:
-
-```text
-Real reconstructed neuron
-          ↓
-        SWC file
-          ↓
-   Python morphology analysis
-          ↓
-       3D structure
-          ↓
-     NEURON Import3D
-          ↓
-   NEURON Sections/Segments
-          ↓
-   Membrane mechanisms
-          ↓
-      Synapses
-          ↓
- Electrical simulation
-```
+The objective is to understand how a morphology file represents a real biological structure and how that information can eventually be used in an electrical model.
 
 ---
 
@@ -422,29 +433,33 @@ Therefore, realistic neuronal morphology can be used to investigate how **struct
 
 # From morphology to electrical simulation
 
-One of the longer-term goals of this project is to connect the morphology work with the electrophysiology learned in the earlier lessons.
+One of the longer-term goals of this project is to connect the morphology work with the electrophysiology learned in the previous lessons.
 
-The progression will be:
+The planned progression is:
 
 ```text
-SWC morphology
-      ↓
-Import into NEURON
-      ↓
-Realistic neuronal geometry
-      ↓
-Passive membrane properties
-      ↓
-Active ion channels
-      ↓
-Current injection
-      ↓
-Synaptic inputs
-      ↓
-Electrical response
+Real reconstructed morphology
+          ↓
+        SWC file
+          ↓
+   Python morphology analysis
+          ↓
+       3D structure
+          ↓
+     NEURON Import3D
+          ↓
+   NEURON Sections/Segments
+          ↓
+   Passive membrane properties
+          ↓
+     Active ion channels
+          ↓
+      Synaptic inputs
+          ↓
+   Electrical simulation
 ```
 
-This will allow questions such as:
+This will allow the project to investigate questions such as:
 
 * How does neuronal geometry affect voltage propagation?
 * How does a dendritic synapse influence the soma?
@@ -452,7 +467,7 @@ This will allow questions such as:
 * How does a realistic morphology behave differently from a simplified neuron?
 * How do neuronal structure and biophysical properties interact?
 
-These are the concepts this project is working toward.
+This is the direction in which the morphology work is developing.
 
 ---
 
@@ -478,6 +493,7 @@ The project also uses reconstructed neuronal morphology data in formats such as 
 * Neuronal membrane dynamics
 * Action potentials
 * Ion channels
+* Hodgkin-Huxley modelling
 * Synaptic transmission
 * Neural circuits
 * Cable theory
@@ -512,7 +528,7 @@ The project also uses reconstructed neuronal morphology data in formats such as 
 
 This is an **ongoing learning and portfolio project**.
 
-The earlier lessons focus on fundamental neuronal electrophysiology and computational modelling.
+The earlier stages focus on understanding fundamental neuronal electrophysiology and computational modelling.
 
 The current stage focuses on reconstructed neuronal morphology and learning how real neuronal structure can be incorporated into computational models.
 
@@ -557,4 +573,6 @@ What happens when parameters change?
 How does the result relate back to biology?
 ```
 
-The repository therefore contains both structured lessons and small experiments used to investigate neuronal behaviour.
+The repository therefore contains structured lessons and experiments used to investigate neuronal behaviour.
+
+The overall aim is to progressively move from **simple theoretical models** toward **realistic computational representations of neurons**.
