@@ -1,4 +1,4 @@
-# Lesson 1 Notes
+# Notes
 
 **Properties that determine how membrane voltage changes over time:**
 - membrane
