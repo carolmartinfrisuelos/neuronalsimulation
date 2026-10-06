@@ -149,7 +149,22 @@ Na+ and K+ currents
       ↓
 Action potential
 ```
+Simulations
 
+The active-neuron stage also contains several simulations used to study the behaviour of the Hodgkin-Huxley model.
+
+These simulations were used to explore how an active neuron responds to different conditions and to connect the theoretical equations with the behaviour observed computationally.
+
+The simulations focus on concepts such as:
+
+Action potential generation
+Sodium and potassium currents
+Membrane voltage dynamics
+Current injection
+Changes in neuronal parameters
+Differences between passive and active membrane behaviour
+
+The simulations provided the basis for the experiments developed in Lesson 3, where the models were explored more systematically by changing parameters and comparing neuronal responses.
 ---
 
 # 3. Experiments
